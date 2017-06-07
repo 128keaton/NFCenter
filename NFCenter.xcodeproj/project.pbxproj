@@ -22,6 +22,8 @@
 		8A2CA5BB1EE62DC000CBFEB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A2CA5BE1EE62DC000CBFEB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A2CA5C01EE62DC000CBFEB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A32B7201EE630D500CFEA9E /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
+		8AE717031EE79BAF0078BA8F /* NFCenter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NFCenter.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			children = (
 				8A2CA5B31EE62DC000CBFEB1 /* NFCenter */,
 				8A2CA5B21EE62DC000CBFEB1 /* Products */,
+				8A2CA5C61EE62E5D00CBFEB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +57,7 @@
 		8A2CA5B31EE62DC000CBFEB1 /* NFCenter */ = {
 			isa = PBXGroup;
 			children = (
+				8AE717031EE79BAF0078BA8F /* NFCenter.entitlements */,
 				8A2CA5B41EE62DC000CBFEB1 /* AppDelegate.swift */,
 				8A2CA5B61EE62DC000CBFEB1 /* ViewController.swift */,
 				8A2CA5B81EE62DC000CBFEB1 /* Main.storyboard */,
@@ -62,6 +66,14 @@
 				8A2CA5C01EE62DC000CBFEB1 /* Info.plist */,
 			);
 			path = NFCenter;
+			sourceTree = "<group>";
+		};
+		8A2CA5C61EE62E5D00CBFEB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A32B7201EE630D500CFEA9E /* CoreNFC.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +108,15 @@
 				TargetAttributes = {
 					8A2CA5B01EE62DC000CBFEB1 = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 0;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -269,11 +290,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NFCenter/NFCenter.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z48RKT6B3T;
 				INFOPLIST_FILE = NFCenter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.128keaton.NFCenter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keaton.NFCenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,11 +309,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NFCenter/NFCenter.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z48RKT6B3T;
 				INFOPLIST_FILE = NFCenter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.128keaton.NFCenter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keaton.NFCenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -312,6 +343,7 @@
 				8A2CA5C51EE62DC000CBFEB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

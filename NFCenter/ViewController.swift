@@ -13,6 +13,7 @@ class ViewController: UIViewController, NFCNDEFReaderSessionDelegate {
     var nfcSession: NFCNDEFReaderSession? = nil
     var newLog = true
     @IBOutlet var logArea: UITextView?
+    @IBOutlet var scanButton: UIButton?
     
     
     
@@ -37,6 +38,8 @@ class ViewController: UIViewController, NFCNDEFReaderSessionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         logArea?.layer.cornerRadius = 10
+        scanButton?.layer.cornerRadius = 10
+        
         
         
         // Do any additional setup after loading the view, typically from a nib.

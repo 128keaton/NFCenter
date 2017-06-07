@@ -27,11 +27,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ok-nM-IiO">
-                                <rect key="frame" x="164" y="617" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="avC-9j-rjg"/>
-                                </constraints>
-                                <state key="normal" title="Scan"/>
+                                <rect key="frame" x="16" y="593" width="343" height="54"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Scan">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="beginScanning" destination="BYZ-38-t0r" eventType="touchUpInside" id="s2F-6L-S0N"/>
                                 </connections>
@@ -45,11 +45,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Tap 'Scan' to begin." adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JD-e0-sLZ">
-                                <rect key="frame" x="16" y="269" width="343" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Tap 'Scan' to begin." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JD-e0-sLZ">
+                                <rect key="frame" x="16" y="103" width="343" height="444"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="D6u-Jk-8ge"/>
+                                    <constraint firstAttribute="height" constant="444" id="D6u-Jk-8ge"/>
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
@@ -58,18 +58,21 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="4Ok-nM-IiO" secondAttribute="bottom" constant="20" symbolic="YES" id="1A7-IY-TMB"/>
-                            <constraint firstItem="0JD-e0-sLZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DCd-nK-0NJ"/>
+                            <constraint firstAttribute="bottom" secondItem="4Ok-nM-IiO" secondAttribute="bottom" constant="20" symbolic="YES" id="0wu-nc-vpd"/>
+                            <constraint firstItem="0JD-e0-sLZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-8.5" id="DCd-nK-0NJ"/>
                             <constraint firstItem="0JD-e0-sLZ" firstAttribute="leading" secondItem="sc8-gJ-HfZ" secondAttribute="leading" id="Ntf-EM-lhC"/>
-                            <constraint firstItem="sc8-gJ-HfZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="P4A-pH-4Of"/>
-                            <constraint firstItem="4Ok-nM-IiO" firstAttribute="centerX" secondItem="sc8-gJ-HfZ" secondAttribute="centerX" id="dsV-10-LdK"/>
-                            <constraint firstItem="4Ok-nM-IiO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gMM-Ay-tAi"/>
+                            <constraint firstItem="4Ok-nM-IiO" firstAttribute="trailing" secondItem="0JD-e0-sLZ" secondAttribute="trailing" id="Qib-cO-AoJ"/>
+                            <constraint firstItem="4Ok-nM-IiO" firstAttribute="top" secondItem="0JD-e0-sLZ" secondAttribute="bottom" constant="46" id="Z5q-mf-3s1"/>
+                            <constraint firstItem="4Ok-nM-IiO" firstAttribute="leading" secondItem="0JD-e0-sLZ" secondAttribute="leading" id="i1N-ko-is2"/>
+                            <constraint firstItem="4Ok-nM-IiO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="mTx-a4-FdG"/>
                             <constraint firstItem="sc8-gJ-HfZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mzh-FT-GQC"/>
                             <constraint firstItem="0JD-e0-sLZ" firstAttribute="trailing" secondItem="sc8-gJ-HfZ" secondAttribute="trailing" id="r4q-oA-3es"/>
+                            <constraint firstItem="0JD-e0-sLZ" firstAttribute="top" secondItem="sc8-gJ-HfZ" secondAttribute="bottom" constant="8" symbolic="YES" id="rIi-oo-lkd"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="logArea" destination="0JD-e0-sLZ" id="Krn-RP-a1x"/>
+                        <outlet property="scanButton" destination="4Ok-nM-IiO" id="GXk-bL-AY0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

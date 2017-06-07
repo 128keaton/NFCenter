@@ -12,6 +12,7 @@
 		8A2CA5BA1EE62DC000CBFEB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A2CA5B81EE62DC000CBFEB1 /* Main.storyboard */; };
 		8A2CA5BC1EE62DC000CBFEB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2CA5BB1EE62DC000CBFEB1 /* Assets.xcassets */; };
 		8A2CA5BF1EE62DC000CBFEB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A2CA5BD1EE62DC000CBFEB1 /* LaunchScreen.storyboard */; };
+		8AE717051EE7A2610078BA8F /* screenshot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AE717041EE7A2610078BA8F /* screenshot.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8A2CA5C01EE62DC000CBFEB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A32B7201EE630D500CFEA9E /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
 		8AE717031EE79BAF0078BA8F /* NFCenter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NFCenter.entitlements; sourceTree = "<group>"; };
+		8AE717041EE7A2610078BA8F /* screenshot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = screenshot.jpg; path = ../../Downloads/screenshot.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		8A2CA5A81EE62DBF00CBFEB1 = {
 			isa = PBXGroup;
 			children = (
+				8AE717041EE7A2610078BA8F /* screenshot.jpg */,
 				8A2CA5B31EE62DC000CBFEB1 /* NFCenter */,
 				8A2CA5B21EE62DC000CBFEB1 /* Products */,
 				8A2CA5C61EE62E5D00CBFEB1 /* Frameworks */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A2CA5BF1EE62DC000CBFEB1 /* LaunchScreen.storyboard in Resources */,
+				8AE717051EE7A2610078BA8F /* screenshot.jpg in Resources */,
 				8A2CA5BC1EE62DC000CBFEB1 /* Assets.xcassets in Resources */,
 				8A2CA5BA1EE62DC000CBFEB1 /* Main.storyboard in Resources */,
 			);

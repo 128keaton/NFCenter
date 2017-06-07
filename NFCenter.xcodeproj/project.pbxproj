@@ -297,10 +297,10 @@
 				CODE_SIGN_ENTITLEMENTS = NFCenter/NFCenter.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z48RKT6B3T;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NFCenter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.keaton.NFCenter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.you.NFCenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -316,10 +316,10 @@
 				CODE_SIGN_ENTITLEMENTS = NFCenter/NFCenter.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z48RKT6B3T;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NFCenter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.keaton.NFCenter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.you.NFCenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";

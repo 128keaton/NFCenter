@@ -5,8 +5,14 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -21,25 +27,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ok-nM-IiO">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <rect key="frame" x="164" y="617" width="46" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="os1-ie-zvC"/>
+                                    <constraint firstAttribute="width" constant="46" id="avC-9j-rjg"/>
                                 </constraints>
                                 <state key="normal" title="Scan"/>
                                 <connections>
                                     <action selector="beginScanning" destination="BYZ-38-t0r" eventType="touchUpInside" id="s2F-6L-S0N"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NFCenter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sc8-gJ-HfZ">
+                                <rect key="frame" x="16" y="20" width="343" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="F1b-4E-8ha"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Tap 'Scan' to begin." adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JD-e0-sLZ">
+                                <rect key="frame" x="16" y="269" width="343" height="128"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="D6u-Jk-8ge"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4Ok-nM-IiO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RoR-dT-4Lq"/>
-                            <constraint firstItem="4Ok-nM-IiO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xJD-fM-nFt"/>
+                            <constraint firstAttribute="bottom" secondItem="4Ok-nM-IiO" secondAttribute="bottom" constant="20" symbolic="YES" id="1A7-IY-TMB"/>
+                            <constraint firstItem="0JD-e0-sLZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DCd-nK-0NJ"/>
+                            <constraint firstItem="0JD-e0-sLZ" firstAttribute="leading" secondItem="sc8-gJ-HfZ" secondAttribute="leading" id="Ntf-EM-lhC"/>
+                            <constraint firstItem="sc8-gJ-HfZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="P4A-pH-4Of"/>
+                            <constraint firstItem="4Ok-nM-IiO" firstAttribute="centerX" secondItem="sc8-gJ-HfZ" secondAttribute="centerX" id="dsV-10-LdK"/>
+                            <constraint firstItem="4Ok-nM-IiO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gMM-Ay-tAi"/>
+                            <constraint firstItem="sc8-gJ-HfZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mzh-FT-GQC"/>
+                            <constraint firstItem="0JD-e0-sLZ" firstAttribute="trailing" secondItem="sc8-gJ-HfZ" secondAttribute="trailing" id="r4q-oA-3es"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="logArea" destination="0JD-e0-sLZ" id="Krn-RP-a1x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
         </scene>
     </scenes>
 </document>
